@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Accueil - Les activités du village Khory</title>
+</head>
+
+<body>
+<header>
+    <h2>Le village Khory</h2>
+    <ul>
+        <li><a href="./index.html">Accueil</a> </li>
+        <li><a href="./champ.html">Champ d'ananas</a></li>
+        <li><a href="./ancienneFerme.html">Ferme</a></li>
+        <li><a href="./contactus.html">Contactez-nous</a></li>
+
+    </ul>
+</header>
+<div>
+    <h4>Contactez-nous</h4>
+    <p>Veuillez remplir et nous soumettre le formulaire ci-dessous si vous avez besoin d'informations que ca soit pour : </p>
+    <ol>
+        <li>Visiter le village </li>
+        <li>sejourné ici afin de voir comme on fait pour reussir la culture de l'ananas</li>
+        <li>venir en aide au village afin de sauver le secteur de l'elevage</li>
+
+    </ol>
+        <form action="./contactus.html" method="post">
+            <div>
+                <label for="nom">Votre nom et prenoms :</label>
+                <input placeholder="Votre nom et prenoms" id="nom" name="nom" type="text" minlength="10" maxlength="100" required>
+            </div>
+
+            <div>
+                <label for="titre">Sujet : </label>
+                <input placeholder="De quoi voulez-vous nous parler" id="titre" name="text" type="text" minlength="8" maxlength="256" required>
+            </div>
+
+            <div>
+                <label for="email">Email :</label>
+                <input placeholder="VOtre adresse email" id="email" name="email" type="email" required>
+            </div>
+
+            <div>
+                <label for="message">Message :</label>
+                <textarea placeholder="Donnez nous quelques details" id="message" name="message" cols="150" rows="12" required></textarea>
+            </div>
+
+            <div>
+                <input type="reset" value="Réinitialiser le formulaire">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+
+</div>
+<footer>
+    <div>
+        <h3>Realisé par le conseil du villa</h3>
+        <ul>
+            <li><a href="./index.html">Accueil</a> </li>
+            <li><a href="./champ.html">Champ d'ananas</a></li>
+            <li><a href="./ancienneFerme.html">Ferme</a></li>
+            <li><a href="./contactus.html">Contactez-nous</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
