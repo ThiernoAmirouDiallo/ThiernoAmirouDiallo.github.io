@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Contactez-nous</title>
+    <link href="design/design.css" rel="stylesheet" type="text/css">
+    <link href="design/printingDesign.css" rel="stylesheet" type="text/css" media="print">
+</head>
+
+<body>
+<header>
+    <nav>
+        <h2>Le village Maferinyah</h2>
+        <div class="container">
+            <a href="./index.html"><img class="logo" src="assets/images/maferinyah.png" alt="Localisation Maferinrah"></a>
+
+            <ul id="horizontal-list" class="vertical-center">
+                <li><a href="./index.html">Accueil</a> </li>
+                <li><a href="./champ.html">Champ d'ananas</a></li>
+                <li><a href="./ancienneFerme.html">Ferme</a></li>
+                <li><a href="./contactus.html">Contactez-nous</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="bodyContent">
+    <h2>Laissez votre message</h2>
+    <p>Veuillez remplir et nous soumettre le formulaire ci-dessous si vous avez besoin d'informations que ca soit pour : </p>
+    <ol>
+        <li>Visiter le village </li>
+        <li>sejourné ici afin de voir comme on fait pour reussir la culture de l'ananas</li>
+        <li>venir en aide au village afin de sauver le secteur de l'elevage</li>
+    </ol>
+        <form action="./contactus.html" method="post">
+            <div class="wrapper">
+                <label for="nom"
+                       class="formLabel">Nom et prénom(s) :
+                </label>
+
+                <input class="formInput"
+                       placeholder="Votre nom et prenoms"
+                       onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'Votre nom et prenoms'"
+                       id="nom"
+                       name="nom"
+                       type="text"
+                       minlength="10"
+                       maxlength="100"
+                       required>
+            </div>
+
+            <div class="wrapper">
+                <label for="titre"
+                       class="formLabel">Sujet :
+                </label>
+
+                <input class="formInput"
+                       placeholder="De quoi voulez-vous nous parler"
+                       onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'De quoi voulez-vous nous parler'"
+                       id="titre"
+                       name="text"
+                       type="text"
+                       minlength="8"
+                       maxlength="256"
+                       required>
+            </div>
+
+            <div class="wrapper">
+                <label for="email"
+                       class="formLabel">Email :
+                </label>
+
+                <input class="formInput"
+                       placeholder="Votre adresse email"
+                       onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'Votre adresse email'"
+                       id="email"
+                       name="email"
+                       type="email"
+                       required>
+            </div>
+
+            <div class="textareaWrapper">
+                <label for="message"
+                       class="formLabel">Message :
+                </label>
+
+                <div class="formInput">
+                    <textarea  placeholder="Saisissez votre message ici"
+                               onfocus="this.placeholder = ''"
+                               onblur="this.placeholder = 'Saisissez votre message ici'"
+                               id="message"
+                               name="message"
+                               cols="150"
+                               rows="12"
+                               required></textarea>
+                </div>
+
+            </div>
+
+            <div class="formControlButtons">
+                <input class="reset" type="reset" value="Réinitialiser le formulaire">
+                <input class="submit" type="submit" value="Envoyer">
+            </div>
+        </form>
+
+</div>
+<footer>
+    <div>
+        <nav>
+            <h4>Realisé par le conseil du village. Tous droits reservés</h4>
+            <ul>
+                <li><a href="./index.html">Accueil</a> </li>
+                <li><a href="./champ.html">Champ d'ananas</a></li>
+                <li><a href="./ancienneFerme.html">Ferme</a></li>
+                <li><a href="./contactus.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>
