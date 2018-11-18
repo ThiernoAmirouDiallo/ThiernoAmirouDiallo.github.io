@@ -10,22 +10,24 @@ $input-textarea-border-color : gray;
 //form control buttons
 $form-control-submit : darkgreen;
 $form-control-reset : darkred;
+$submit-width:120px;
+$reset-width:250px;
 
-@mixin form-control($background-color) {
+@mixin form-control($background-color, $width) {
     background-color: $background-color ;
     height: 30px;
-    width: 120px;
+    width: $width;
     font-size: large;
     font-weight: bold;
     border: 2px solid black;
     color: white;
 }
 .submit{
-    @include form-control($form-control-submit)
+    @include form-control($form-control-submit,$submit-width)
 }
 
 .reset{
-    @include form-control($form-control-submit)
+    @include form-control($form-control-reset,$reset-width)
 }
 
 
